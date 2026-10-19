@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bella Napoli: pizzas artesanales y auténtico sabor italiano.">
+  <title>Bella Napoli | Pizzería artesanal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="encabezado">
+    <a href="#inicio" class="logo">
+      <span class="logo-icono">🍕</span>
+      <span>Bella <b>Napoli</b></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="navegacion" id="navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contactanos">Contacto</a>
+    </nav>
+
+    <a href="#menu" class="boton boton-pequeno boton-header">
+      Ver menú ↗
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta"><span></span> AUTÉNTICO SABOR ITALIANO</span>
+        <h1>Una pizza hecha con <em>pasión.</em></h1>
+        <p>
+          Masa artesanal, ingredientes frescos y recetas
+          que reúnen a todos alrededor de la mesa.
+        </p>
+        <div class="hero-botones">
+          <a href="#menu" class="boton">Descubre nuestro menú ↗</a>
+          <a href="#nosotros" class="boton boton-claro">Nuestra historia</a>
+        </div>
+        <div class="hero-nota">
+          <span>✦</span> Hecho con amor, servido con tradición.
+        </div>
+      </div>
+
+      <div class="hero-foto">
+        <img
+          src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1100&q=85"
+          alt="Pizza italiana recién horneada">
+        <div class="sello">
+          <span>FATTO CON</span>
+          <strong>♥</strong>
+          <span>AMORE</span>
+        </div>
+        <div class="foto-pie">
+          <span>✦ RECETA ARTESANAL</span>
+          <span>Desde nuestra cocina hasta tu mesa</span>
+        </div>
+      </div>
+      <div class="hero-numero">01 / ITALIA</div>
+    </section>
+
+    <div class="franja">
+      <span>MASA ARTESANAL</span><b>✳</b>
+      <span>INGREDIENTES FRESCOS</span><b>✳</b>
+      <span>ESPÍRITU ITALIANO</span><b>✳</b>
+      <span>HECHO CON AMOR</span>
+    </div>
+
+    <section class="seccion-menu" id="menu">
+      <div class="encabezado-seccion">
+        <div>
+          <span class="etiqueta">IL NOSTRO MENU</span>
+          <h2>Un pedacito de <em>Italia.</em></h2>
+        </div>
+        <p>Sabores que enamoran, ingredientes que cuentan historias.</p>
+      </div>
+
+      <div class="filtros" role="group" aria-label="Filtrar productos">
+        <button class="filtro activo" data-filtro="todos">Todo</button>
+        <button class="filtro" data-filtro="pizzas">Pizzas</button>
+        <button class="filtro" data-filtro="entradas">Entradas</button>
+        <button class="filtro" data-filtro="bebidas">Bebidas</button>
+        <button class="filtro" data-filtro="postres">Postres</button>
+      </div>
+
+      <div class="productos">
+
+        <!-- PIZZAS -->
+        <article class="tarjeta-producto" data-categoria="pizzas">
+          <div class="producto-imagen"
+          pizza-margarita>
+            <img 
+            src="pizza-margarita.jpeg"
+            alt="pizza Margarita con tomate y albahace"
+            >
+            <span class="producto-numero">01</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">PIZZAS</span>
+            <h3>Margarita clásica</h3>
+            <p>Tomate, mozzarella fresca, albahaca y aceite de oliva.</p>
+            <strong class="precio">$25.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="pizzas">
+          <div class="producto-imagen
+          pizza-pepperoni">
+            <img 
+            src="pizza-pepperoni.jpeg"
+            alt="pizza pepperoni"
+            >
+            <span class="producto-numero">02</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">PIZZAS</span>
+            <h3>Pepperoni</h3>
+            <p>Queso mozzarella, salsa de tomate y pepperoni.</p>
+            <strong class="precio">$30.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="pizzas">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?auto=format&fit=crop&w=800&q=85" alt="Pizza vegetariana" loading="lazy">
+            <span class="producto-numero">03</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">PIZZAS</span>
+            <h3>La vegetariana</h3>
+            <p>Pimentón, champiñones, aceitunas, cebolla y queso.</p>
+            <strong class="precio">$28.000 COP</strong>
+          </div>
+        </article>
+
+        <!-- TRES ENTRADAS -->
+        <article class="tarjeta-producto" data-categoria="entradas">
+          <div class="producto-imagen">
+            <img src="pandeajo.jpeg"> 
+            alt="pan de ajo">
+            <span class="producto-numero">04</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">ENTRADAS</span>
+            <h3>Pan de ajo</h3>
+            <p>Pan horneado con ajo, mantequilla y hierbas italianas.</p>
+            <strong class="precio">$9.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="entradas">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Ensalada caprese" loading="lazy">
+            <span class="producto-numero">05</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">ENTRADAS</span>
+            <h3>Ensalada caprese</h3>
+            <p>Tomate fresco, mozzarella, albahaca y aceite de oliva.</p>
+            <strong class="precio">$14.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="entradas">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=800&q=85" alt="Bruschettas italianas" loading="lazy">
+            <span class="producto-numero">06</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">ENTRADAS</span>
+            <h3>Bruschettas</h3>
+            <p>Pan tostado con tomate, albahaca y un toque de ajo.</p>
+            <strong class="precio">$12.000 COP</strong>
+          </div>
+        </article>
+
+        <!-- TRES BEBIDAS -->
+        <article class="tarjeta-producto" data-categoria="bebidas">
+          <div class="producto-imagen">
+            <img src="limonada.jpeg"
+            alt="Limonada">
+            <span class="producto-numero">07</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">BEBIDAS</span>
+            <h3>Limonada natural</h3>
+            <p>Limón recién exprimido, agua y un toque de dulzura.</p>
+            <strong class="precio">$6.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="bebidas">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=85" alt="Bebida frutal fría" loading="lazy">
+            <span class="producto-numero">08</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">BEBIDAS</span>
+            <h3>Refresco de frutos rojos</h3>
+            <p>Una mezcla frutal, refrescante y llena de sabor.</p>
+            <strong class="precio">$8.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="bebidas">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=85" alt="Café italiano" loading="lazy">
+            <span class="producto-numero">09</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">BEBIDAS</span>
+            <h3>Café italiano</h3>
+            <p>Café aromático con carácter y tradición.</p>
+            <strong class="precio">$5.000 COP</strong>
+          </div>
+        </article>
+
+        <!-- TRES POSTRES -->
+        <article class="tarjeta-producto" data-categoria="postres">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=85" alt="Tiramisú italiano" loading="lazy">
+            <span class="producto-numero">10</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">POSTRES</span>
+            <h3>Tiramisú</h3>
+            <p>Postre italiano con café, crema suave y cacao.</p>
+            <strong class="precio">$12.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="postres">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=85" alt="Panna cotta" loading="lazy">
+            <span class="producto-numero">11</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">POSTRES</span>
+            <h3>Panna cotta</h3>
+            <p>Postre cremoso con salsa dulce de frutos rojos.</p>
+            <strong class="precio">$11.000 COP</strong>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" data-categoria="postres">
+          <div class="producto-imagen">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=85" alt="Gelato italiano" loading="lazy">
+            <span class="producto-numero">12</span>
+          </div>
+          <div class="producto-info">
+            <span class="categoria">POSTRES</span>
+            <h3>Gelato italiano</h3>
+            <p>Helado artesanal, suave y lleno de sabor.</p>
+            <strong class="precio">$15.000 COP</strong>
+          </div>
+        </article>
+
+      </div>
+      <p class="nota-menu">* Precios de ejemplo en pesos colombianos.</p>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div class="nosotros-imagen">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=85" alt="Preparación artesanal en la cocina" loading="lazy">
+        <div class="nota-foto">LA PASSIONE<br><strong>È TUTTO.</strong></div>
+      </div>
+
+      <div class="nosotros-texto">
+        <span class="etiqueta">NUESTRA HISTORIA</span>
+        <h2>Más que pizza,<br>una historia de <em>amor.</em></h2>
+        <p>
+          En Bella Napoli creemos que los mejores momentos
+          suceden alrededor de una mesa. Por eso preparamos
+          cada pizza con dedicación, ingredientes frescos
+          y el auténtico espíritu de Italia.
+        </p>
+        <div class="valores">
+          <div><span>✦</span><section><h3>Hecho a mano</h3><p>Masa preparada con dedicación.</p></section></div>
+          <div><span>✦</span><section><h3>Ingredientes frescos</h3><p>Calidad en cada bocado.</p></section></div>
+        </div>
+        <a href="#menu" class="boton">Explora nuestros sabores ↗</a>
+      </div>
+    </section>
+
+    <section class="cierre" id="contacto">
+      <span class="etiqueta">UN TAVOLO PER TE</span>
+      <h2>La felicidad tiene<br>sabor a <em>pizza.</em></h2>
+      <p>Reúne a los tuyos y disfruta un pedacito de Italia.</p>
+      <a href="https://wa.me/573205810086" 
+      target="_blank"
+      class="boton boton-oscuro">
+        Contáctanos ↗
+      </a>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <a href="#inicio" class="logo">
+      <span class="logo-icono">🍕</span>
+      <span>Bella <b>Napoli</b></span>
+    </a>
+    <p>Fatto con amore. © <span id="anio"></span> Bella Napoli.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+  <button id="volverArriba" class="volver-arriba" aria-label="Volver arriba">↑</button>
+
+  <!-- UBICACIÓN DEL LOCAL -->
+<section class="ubicacion-local">
+    <span class="icono-ubicacion">📍</span>
+    <h2>¡Visítanos!</h2>
+    <p>Ven a disfrutar nuestros deliciosos platos.</p>
+
+    <p class="direccion">
+        <strong>Nuestra dirección</strong><br>
+         canalete,cordoba
+    </p>
+
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=Canalete cordoba"
+        target="_blank"
+        class="boton-mapa">
+        📍 Cómo llegar
+    </a>
+</section>
+</body>
+</html>
